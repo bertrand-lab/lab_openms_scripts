@@ -1,0 +1,4 @@
+#cat /var/www/sfolder/general/crap.fasta ../data/protein_expression_data/phytoplankton_genomes/frag_genome/Fracy1_GeneModels_FilteredModels1_aa.fasta > ../data/protein_expression_data/phytoplankton_genomes/frag_genome/Fracy1_GeneModels_FilteredModels1_aa_crap.fasta
+
+cat /var/www/sfolder/general/crap.fasta ../data/protein_expression_data/phytoplankton_genomes/phaeo_genome/Phatr2_chromosomes_geneModels_FilteredModels2_cat_unmapped_GeneModels_FilteredModels1_aa.fasta > ../data/protein_expression_data/phytoplankton_genomes/phaeo_genome/Phatr2_chromosomes_geneModels_FilteredModels2_cat_unmapped_GeneModels_FilteredModels1_aa_crap.fasta
+

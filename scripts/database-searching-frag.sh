@@ -1,0 +1,1 @@
+bash database-searching-openms.sh ../data/protein_expression_data/phytoplankton_genomes/frag_genome/Fracy1_GeneModels_FilteredModels1_aa.fasta ../data/protein_expression_data/mass_spec_data/frag_data/

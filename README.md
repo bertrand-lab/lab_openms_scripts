@@ -34,6 +34,8 @@ Or this can be written as a loop in a separate bash script if you are creating m
 
 I've relied on this [great collection](https://github.com/pwilmart/fasta_utilities) of fasta processing scripts from P. Wilmarth. Specifically, I use the script `remove_duplicates.py` for removing duplicate sequences from my database prior to database searching. P. Wilmarth also has excellent documentation about proteomic data analysis in general, check out his github/twitter! 
 
+For using this on Doris, I have the script `remove_duplicates.py` saved at this location: `/var/www/sfolder/general/`. There is a bash script that loops through using this python script for a set of fasta files if you need that (see `remove-duplicate-sequences.sh`).
+
 ### Database Searching with MSGF+
 
 There are tonnes of database search engines. We have [MSGF+](https://www.nature.com/articles/ncomms6277) installed on Doris, which tends to work quite well and benchmarks well compared with other databases. This script (`database-searching-openms.sh`) conducts the database searching on a list of files. I'd recommend you write another separate script that uses this one as an input, like the following example: `database-searching-frag.sh`. Then you can run:

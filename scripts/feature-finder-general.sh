@@ -70,10 +70,7 @@ do
 # Merge external idXML files
        IDMerger -in $all_other_temp_files -out $file_base_no_folder'-external.idXML'
 # Identify features
-       echo "Script executed from: ${PWD}"
-       echo 'this is where it breaks'
-       echo $PP_folder_location$file_base_no_folder_mzml'.mzML'
-       FeatureFinderIdentification -in '../../../../'$PP_folder_location$file_base_no_folder_mzml'.mzML' -id $file_base_no_folder'_FDR.idXML' -id_ext $file_base_no_folder'-external.idXML' -out $file_base_no_folder'.featureXML'
+       FeatureFinderIdentification -in $PP_folder_location$file_base_no_folder_mzml'.mzML' -id $file_base_no_folder'_FDR.idXML' -id_ext $file_base_no_folder'-external.idXML' -out $file_base_no_folder'.featureXML'
 # Remove temporary .idXML files.
        rm *-temp.idXML
 # Go back to the previous working directory.

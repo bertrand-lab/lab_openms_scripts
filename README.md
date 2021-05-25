@@ -2,6 +2,18 @@
 
 Here are a collection of scripts to do various things on Doris for proteomic database searching and quantification. This is a skeleton of what you can do, and always refer to the excellent [documentation](https://www.openms.de/getting-started/command-line-and-visualisations/), so always go back to there if there are questions! The main idea for this github repo is to be a skeleton, from which you can change settings to your preference. Each of these different bash scripts connects to each other, but you would have to manually run one and then manually run the next one. In the future, it would be great to wrap these together, and I think the best way to do that would be with [Snakemake](https://snakemake.readthedocs.io/en/stable/).
 
+Note that some of these scripts assume a specific directory structure. You can always tweak the scripts for your own needs, but with this structure it should be easiest to run them (particularly for `feature-finder-general.sh`):
+
+```
+~\base-project-id
+    \scripts
+    \data
+        \mzML-converted
+```
+ 
+Where `base-project-id` can be any name, and the bash scripts below are located in `scripts`.
+
+
 ### Converting your files
 
 From the mass spec, your file format will likely be a .raw file. This can be converted using [ThermoRawFileParser](https://pubs.acs.org/doi/10.1021/acs.jproteome.9b00328). You can access this tool directly, or use the bash script `convert_raw_to_mzml.sh` to loop through a folder of .raw files and convert each one individually. If you wanted to use this bash script, run:
